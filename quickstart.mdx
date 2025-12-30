@@ -1,0 +1,172 @@
+---
+title: Getting Started with Your Documentation Space
+description: Learn how to set up your account and create your first documentation space in just a few minutes.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have:
+
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Optional: GitHub or Google account for social login
+
+<Callout kind="info">
+
+Prepare your initial documentation files in Markdown or MDX format. Recommended tools include VS Code with MDX extensions for local editing.
+
+</Callout>
+
+## Sign Up for an Account
+
+Create your account to access the full features of Сергій Москалюк documentation platform.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="monitor">
+    Open your browser and navigate to `https://app.example.com`.
+
+    Click the **Sign Up** button in the top right corner.
+  </Step>
+  <Step title="Enter Your Details" icon="user-plus">
+    Fill in your email address, create a strong password, and provide your full name.
+
+    Agree to the terms and click **Create Account**.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification email from `no-reply@example.com`.
+
+    Click the verification link to activate your account.
+  </Step>
+</Steps>
+
+## Log In Using Your Preferred Method
+
+Choose from multiple login options for quick access.
+
+<Tabs>
+  <Tab title="Email & Password" icon="mail">
+    Enter your registered email and password on the login page.
+
+    Click **Log In**.
+  </Tab>
+  <Tab title="Google" icon="google">
+    Click the **Continue with Google** button.
+
+    Select your Google account and authorize the app.
+  </Tab>
+  <Tab title="GitHub" icon="github">
+    Click **Continue with GitHub**.
+
+    Approve the OAuth request to link your repository access.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+
+Enable two-factor authentication (2FA) in your account settings after first login for added security.
+
+</Callout>
+
+## Create Your First Documentation Project
+
+Set up a new space for your project docs.
+
+<Steps>
+  <Step title="New Project" icon="folder-plus">
+    From the dashboard, click **New Documentation Space**.
+
+    Enter a name like `my-project-docs` and select a template (e.g., "Blank" or "API Docs").
+  </Step>
+  <Step title="Configure Basics" icon="settings">
+    Add a description: "Documentation for My Awesome Project".
+
+    Set the brand color to `#3B82F6` for your theme.
+  </Step>
+  <Step title="Save and Publish" icon="save">
+    Click **Create Space**. Your project is now live at `https://docs.example.com/my-project-docs`.
+  </Step>
+</Steps>
+
+## Upload Your Initial Content
+
+Add your first pages using these methods.
+
+<Columns cols={2}>
+  <Card title="Drag & Drop Files" icon="upload" horizontal>
+    Navigate to the **Content** section.
+
+    Drag Markdown or MDX files directly into the upload area.
+  </Card>
+  <Card title="Inline Editor" icon="edit-3">
+    Click **New Page** and use the built-in MDX editor.
+
+    Paste or write your content, then **Publish**.
+  </Card>
+</Columns>
+
+Here's an example of your first MDX page frontmatter:
+
+<CodeGroup tabs="MDX,Markdown">
+  ```mdx
+---
+title: Introduction
+description: Welcome to my project docs.
+---
+
+## Overview
+
+Get started here.
+```
+  ```markdown
+---
+title: Introduction
+description: Welcome to my project docs.
+---
+
+# Overview <!-- Note: Use H1 only in raw Markdown -->
+
+Get started here.
+```
+</CodeGroup>
+
+## Navigate and Edit Your Space
+
+Master basic navigation to manage your docs efficiently.
+
+<Steps>
+  <Step title="Explore Sidebar" icon="menu">
+    Use the left sidebar for pages, settings, and previews.
+
+    Click page names to edit or view.
+  </Step>
+  <Step title="Edit a Page" icon="edit">
+    Select a page, make changes in the editor.
+
+    Preview with **Live Preview** and **Publish** updates.
+  </Step>
+  <Step title="Customize Theme" icon="palette">
+    Go to **Settings {gt} Theme**.
+
+    Update brand color, logo, and navigation.
+  </Step>
+</Steps>
+
+## Next Steps
+
+<Columns cols={3}>
+  <Card title="Advanced Editing" icon="code" href="#advanced-editing">
+    Learn MDX components and custom layouts.
+  </Card>
+  <Card title="Collaboration" icon="users" href="/authentication">
+    Invite team members and manage permissions.
+  </Card>
+  <Card title="Custom Domains" icon="globe" href="/configuration">
+    Connect your own domain and SEO settings.
+  </Card>
+</Columns>
+
+<Callout kind="success">
+
+Congratulations! You've set up your first documentation space. Explore more features to enhance your project docs.
+
+</Callout>

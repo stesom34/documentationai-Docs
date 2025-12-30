@@ -1,0 +1,98 @@
+---
+title: Welcome to Сергій Москалюк Documentation
+description: Discover the overview of Сергій Москалюк's documentation platform, designed for organizing and managing your project documentation efficiently.
+---
+
+## Overview
+
+Welcome to the official documentation for Сергій Москалюк. This platform helps you create, organize, and maintain comprehensive project documentation using powerful MDX features. You get a centralized space to document APIs, guides, changelogs, and more, with built-in components for interactive content like tabs, steps, and code examples.
+
+Start by exploring key features, follow the quick start guide, and navigate to essential sections effortlessly. Designed for developers and teams, it streamlines your workflow from initial setup to advanced publishing.
+
+## Key Features
+
+Сергій Москалюк offers robust tools for modern documentation. Build rich pages with visual components and ensure your content stays organized and accessible.
+
+<Columns cols={3}>
+  <Card title="Interactive Components" icon="components" href="#key-features">
+    Use `<Callout>`, `<Steps>`, `<Tabs>`, and more to create engaging docs. Enhance user experience without custom code.
+  </Card>
+  <Card title="MDX Power" icon="file-text" href="#quick-start">
+    Write in Markdown with JSX components. Syntax highlighting and code groups make examples crystal clear.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="/changelog">
+    Track changes with built-in changelog support. Tag releases as `feature`, `bugfix`, or `breaking`.
+  </Card>
+</Columns>
+
+<Callout kind="info">
+  All pages support YAML frontmatter for metadata, ensuring SEO-friendly and structured content.
+</Callout>
+
+## Quick Start
+
+Get up and running in minutes. Follow these steps to create your first documentation page.
+
+<Steps>
+  <Step title="Create a New Page" icon="file-plus">
+    Navigate to your project root and add a new file like `introduction.mdx`.
+
+    ```bash
+    mkdir docs
+    touch docs/introduction.mdx
+    ```
+  </Step>
+  <Step title="Add Frontmatter" icon="settings">
+    Start every page with YAML frontmatter. No blank lines inside!
+
+````mdx
+---
+title: Your Page Title
+description: Brief summary here.
+---
+````
+
+  </Step>
+  <Step title="Write Content" icon="edit-3">
+    Use H2 headings and components. Here's a simple `<CodeGroup>` example:
+
+    <CodeGroup tabs="JavaScript,Python">
+    ````javascript
+    console.log("Hello, Сергій Москалюк!");
+    ````
+    ````python
+    print("Hello, Сергій Москалюк!")
+    ````
+    </CodeGroup>
+  </Step>
+  <Step title="Preview and Publish" icon="eye">
+    Run your local server to preview changes, then deploy to production.
+  </Step>
+</Steps>
+
+## Navigation
+
+Quick links to get you oriented.
+
+<Columns cols={2}>
+  <Card title="Guides & Tutorials" icon="book-open" href="/quickstart">
+    Dive into setup, authentication, and advanced configurations.
+  </Card>
+  <Card title="API Reference" icon="api" href="/authentication">
+    Explore endpoints and parameters with request/response examples.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    Stay updated with the latest releases and improvements.
+  </Card>
+  <Card title="Help & FAQ" icon="help-circle" href="/faq">
+    Common questions and troubleshooting tips.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+  Bookmark this page and explore the sidebar for full navigation. Customize your docs with the brand color `#3B82F6` in themes.
+</Callout>
+
+<Expandable title="Advanced Tips" default-open="false">
+  Customize components with props like `cols={3}` for `<Columns>`. Always escape special characters like `{variable}` or `<100ms` in prose using backticks.
+</Expandable>

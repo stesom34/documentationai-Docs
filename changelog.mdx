@@ -1,0 +1,130 @@
+---
+title: Changelog
+description: Track the latest updates, improvements, and new features released for the Сергій Москалюк documentation platform.
+---
+
+## Recent Updates
+
+Stay informed about the latest releases for the Сергій Москалюк documentation platform. You receive new features, performance improvements, and bug fixes to enhance your documentation experience.
+
+<Update label="2024-11-15" description="v2.0.0" tags={["breaking", "feature", "improvement"]}>
+
+## Breaking Changes
+
+- Removed legacy `{legacyConfig}` support in MDX parsers. Migrate to `{modernConfig}` for compatibility.
+
+## New Features
+
+- Added real-time collaboration editing with live cursors and conflict resolution.
+- Introduced AI-powered content suggestions using natural language prompts.
+- Support for custom brand colors, like `#3B82F6`, directly in theme configurations.
+
+## Improvements
+
+- Enhanced search performance by `{>300%}` for large documentation sites.
+- Optimized image loading with lazy-loading and WebP format conversion.
+
+## Bug Fixes
+
+- Fixed parsing errors with nested code blocks using 4 backticks.
+- Resolved anchor link issues in expandable sections.
+
+</Update>
+
+<Update label="2024-10-20" description="v1.5.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated Mermaid diagram rendering as secure code blocks, not JSX components.
+- Added `<Update>` component for streamlined changelog management.
+
+## Improvements
+
+- Improved JSX attribute validation to prevent common parsing errors like unescaped `{` characters.
+
+## Bug Fixes
+
+- Corrected `ParamField` rendering when using `path` and `query` simultaneously.
+- Fixed `Tabs` component icon alignment on mobile devices.
+
+</Update>
+
+<Update label="2024-09-10" description="v1.0.0" tags={["feature"]}>
+
+## Initial Release
+
+- Core MDX documentation engine with 16+ components including `Cards`, `Steps`, and `CodeGroup`.
+- Full support for YAML frontmatter, H2-first heading structure, and special character escaping.
+- Built-in syntax highlighting for `javascript`, `python`, `bash`, and more.
+
+</Update>
+
+## Key Highlights
+
+Review the most impactful changes across recent releases:
+
+<Columns cols={3}>
+  <Card title="Performance Boost" icon="zap" href="#recent-updates">
+    Response times improved by `{>50%}` with optimized rendering.
+  </Card>
+  <Card title="New Components" icon="package" href="#recent-updates">
+    `Update` and AI suggestions simplify your workflow.
+  </Card>
+  <Card title="Better DX" icon="settings" href="#recent-updates">
+    Zero parsing errors with strict syntax rules.
+  </Card>
+</Columns>
+
+## Upcoming Features
+
+Preview what's coming next to the Сергій Москалюк platform:
+
+<Expandable title="Video Embedding Enhancements" default-open="true">
+  Native support for self-hosted videos with poster images and adaptive streaming.
+  
+  ```jsx
+  <Video
+    src="https://example.com/demo.mp4"
+    poster="https://example.com/thumbnail.jpg"
+    controls="true"
+  />
+  ```
+</Expandable>
+
+<Expandable title="Advanced Analytics">
+  Track page views, component usage, and user engagement metrics.
+</Expandable>
+
+<Callout kind="tip">
+  Subscribe to the RSS feed at `/changelog.xml` or join the community Discord for instant notifications on new releases.
+</Callout>
+
+## How to Stay Updated
+
+Follow these steps to ensure you never miss an update:
+
+<Steps>
+  <Step title="Subscribe" icon="bell">
+    Add `/changelog.xml` to your RSS reader.
+  </Step>
+  <Step title="Watch GitHub" icon="github">
+    Star the repository for release notifications.
+  </Step>
+  <Step title="Check Regularly" icon="calendar">
+    Visit this page weekly for the latest `vX.Y.Z` details.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="npm" icon="package">
+    ```bash
+    npm install @serhiy-moskalyuk/docs@latest
+    ```
+  </Tab>
+  <Tab title="Git" icon="git-branch">
+    ```bash
+    git pull origin main
+    npm install
+    ```
+  </Tab>
+</Tabs>

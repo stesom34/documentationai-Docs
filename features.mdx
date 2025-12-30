@@ -1,0 +1,121 @@
+---
+title: Core Features and Use Cases
+description: Explore the main capabilities of the platform, including page organization, collaboration tools, and customization options for your projects.
+---
+
+## Overview
+
+Сергій Москалюк provides a comprehensive documentation space where you organize project information efficiently. You create pages, collaborate with teams, search content quickly, and customize the appearance to match your brand. This guide covers core workflows and use cases to help you get started.
+
+<Callout kind="info">
+  Focus on one feature at a time to build familiarity. Start with page creation before diving into collaboration.
+</Callout>
+
+## Key Features
+
+Discover the platform's strengths through these core capabilities.
+
+<Columns cols={2}>
+  <Card title="Page Workflows" icon="edit-3" href="#create-pages">
+    Streamline content creation and updates with intuitive editing tools.
+  </Card>
+  <Card title="Collaboration" icon="users" href="#collaborate">
+    Work together in real-time with version history.
+  </Card>
+  <Card title="Search & Organization" icon="search" href="#organize">
+    Find information fast across your documentation space.
+  </Card>
+  <Card title="Customization" icon="palette" href="#customize">
+    Tailor colors, layouts, and styles to your needs.
+  </Card>
+</Columns>
+
+## Create and Edit Pages
+
+Follow this workflow to build and maintain your documentation.
+
+<Steps>
+  <Step title="Create a New Page" icon="plus">
+    Navigate to your workspace and select `New Page`. Choose a template like "Guide" or "API Reference".
+  </Step>
+  <Step title="Edit Content" icon="edit-3">
+    Use the visual editor for markdown and MDX. Add components like `<Callout>` or `<Steps>` directly.
+  </Step>
+  <Step title="Preview and Publish" icon="eye">
+    Preview changes in real-time, then publish. Updates propagate instantly to your team.
+  </Step>
+</Steps>
+
+## Collaborate Effectively
+
+Сергій Москалюк supports multiple collaboration modes.
+
+<Tabs>
+  <Tab title="Real-time Editing" icon="activity">
+    Multiple users edit simultaneously. Changes appear live with user avatars indicating activity.
+
+    <Callout kind="tip">
+      Assign roles like Editor or Viewer to control access.
+    </Callout>
+  </Tab>
+  <Tab title="Version Control" icon="git-branch">
+    Track changes with full history. Revert to previous versions or compare diffs.
+
+    ```diff
+    + Added new feature description
+    - Fixed typo in workflow
+      Collaborators: @user1, @user2
+    ```
+  </Tab>
+</Tabs>
+
+## Search and Organization Tools
+
+Organize content hierarchically and search efficiently.
+
+| Tool | Description | Use Case |
+|------|-------------|----------|
+| Global Search | Full-text search across all pages | Find "authentication" in any doc |
+| Tags | Add labels like `api`, `guide` | Filter by topic |
+| Folders | Nest pages in workspaces | Group by project phase |
+| Breadcrumbs | Navigate page hierarchy | Quick backtracking |
+
+Use tags for dynamic filtering: `tags={["feature", "guide"]}` in queries.
+
+<Expandable title="Advanced Search Tips" default-open="false">
+  Combine search with filters: "collaboration >10 results". Bookmark frequent queries for reuse.
+</Expandable>
+
+## Customize Your Space
+
+Apply your brand, like the `#3B82F6` color, via configuration.
+
+<CodeGroup tabs="YAML,JSON">
+  ```yaml
+  theme:
+    primaryColor: "#3B82F6"
+    logo: "/logo.svg"
+  ```
+  ```json
+  {
+    "theme": {
+      "primaryColor": "#3B82F6",
+      "logo": "/logo.svg"
+    }
+  }
+  ```
+</CodeGroup>
+
+Update settings in your workspace dashboard. Changes apply site-wide without downtime.
+
+<Columns cols={3}>
+  <Card title="Next: Quickstart" icon="zap" href="/quickstart">
+    Set up in minutes.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your space.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    Stay updated.
+  </Card>
+</Columns>
